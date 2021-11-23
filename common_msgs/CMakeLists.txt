@@ -53,6 +53,11 @@ add_message_files(
   Tpoint.msg
 )
 
+# Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  SubTwoNum.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -60,6 +65,7 @@ add_message_files(
 #   Action1.action
 #   Action2.action
 # )
+
 
 # Generate added messages and services with any dependencies listed here
 generate_messages(

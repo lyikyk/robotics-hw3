@@ -15,4 +15,6 @@ def service_callback(request):
 rospy.init_node('Tpoint_subscriber')
 sub = rospy.Subscriber('commom_msgs', Tpoint, callback)
 service = rospy.Service('sub_two_number', SubTwoNum, service_callback)
+rospy.init_node('Tpoint_subscriber')
+sub = rospy.Subscriber('commom_msgs', Tpoint, callback)
 rospy.spin()

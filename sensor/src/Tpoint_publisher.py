@@ -8,6 +8,9 @@ rospy.init_node('Tpoint_publisher')
 pub = rospy.Publisher('commom_msgs', Tpoint, queue_size=1)
 rospy.wait_for_service('sub_two_number')
 requester = rospy.ServiceProxy('sub_two_number', SubTwoNum)
+
+rospy.init_node('Tpoint_publisher')
+pub = rospy.Publisher('commom_msgs', Tpoint, queue_size=1)
 msg = Tpoint()
 rate = rospy.Rate(1)
 while not rospy.is_shutdown():
